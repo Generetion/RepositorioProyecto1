@@ -92,7 +92,7 @@ Partial Class Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.notifcacion.My.Resources.Resources.smooth_ice
+        Me.BackgroundImage = Global.Proyecto.My.Resources.Resources.smooth_ice
         Me.ClientSize = New System.Drawing.Size(304, 256)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)

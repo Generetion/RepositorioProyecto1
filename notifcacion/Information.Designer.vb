@@ -164,7 +164,7 @@ Partial Class Information
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.notifcacion.My.Resources.Resources.android_lollipop_hd_wallpapers_8
+        Me.BackgroundImage = Global.Proyecto.My.Resources.Resources.android_lollipop_hd_wallpapers_8
         Me.ClientSize = New System.Drawing.Size(451, 426)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.TextBox6)

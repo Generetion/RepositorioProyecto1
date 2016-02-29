@@ -133,7 +133,7 @@ Partial Class Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.notifcacion.My.Resources.Resources.BrittanyCastillo001
+        Me.BackgroundImage = Global.Proyecto.My.Resources.Resources.BrittanyCastillo001
         Me.ClientSize = New System.Drawing.Size(566, 387)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.MenuStrip1)

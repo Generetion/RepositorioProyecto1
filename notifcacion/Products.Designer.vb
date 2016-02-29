@@ -115,7 +115,7 @@ Partial Class Products
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.notifcacion.My.Resources.Resources.fondos_azules_1
+        Me.BackgroundImage = Global.Proyecto.My.Resources.Resources.fondos_azules_1
         Me.ClientSize = New System.Drawing.Size(578, 422)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Products"

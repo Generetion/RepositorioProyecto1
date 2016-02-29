@@ -6,9 +6,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{2148CD40-0E50-4F49-86C2-23438FDF8734}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>notifcacion.My.MyApplication</StartupObject>
-    <RootNamespace>notifcacion</RootNamespace>
-    <AssemblyName>notifcacion</AssemblyName>
+    <StartupObject>Proyecto.My.MyApplication</StartupObject>
+    <RootNamespace>Proyecto</RootNamespace>
+    <AssemblyName>Proyecto</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
@@ -21,7 +21,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>notifcacion.xml</DocumentationFile>
+    <DocumentationFile>Proyecto.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -31,7 +31,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>notifcacion.xml</DocumentationFile>
+    <DocumentationFile>Proyecto.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -123,6 +123,11 @@
     <Compile Include="Products.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ProyectoDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProyectoDataSet.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Correo.resx">
@@ -163,6 +168,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ProyectoDataSet.xsc">
+      <DependentUpon>ProyectoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProyectoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProyectoDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProyectoDataSet.xss">
+      <DependentUpon>ProyectoDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Resources\smooth-ice.jpg" />
   </ItemGroup>
   <ItemGroup>
