@@ -8,24 +8,30 @@ Public Class Login
     End Sub
 
     Private Sub BtnLogin_Click(sender As Object, e As EventArgs) Handles BtnLogin.Click
-        If (TbxPassword.Text = "Admin" And TbxUsername.Text = "Admin") Then
-            Administrator.Show()
-            Me.Close()
-        Else
-            MessageBox.Show("El programa por ahora solo admite Admin, Admin")
-        End If
+        Login()
     End Sub
 
-    Sub login()
-        Dim con As New SqlClient.SqlConnection("Data Source=FERNANDO-PC\SQQLEXPRESS;Initial Catalog=Proyecto;Integrated Security=True")
-        con.Open()
-        Dim dr As SqlClient.SqlDataReader
-        Dim cmd As New SqlClient.SqlCommand("select * from [Users] where username" + TbxUsername.Text + "and pasword" + TbxPassword.Text + "", con)
-        dr = cmd.ExecuteReader
-        If dr.Read Then
+    Sub Login()
+        Dim connection As New SqlClient.SqlConnection
+        Dim command As New SqlClient.SqlCommand
+        Dim adaptor As New SqlClient.SqlDataAdapter
+        Dim dataSet As New DataSet
+
+        connection.ConnectionString = ("Data Source=FERNANDO-PC\SQQLEXPRESS;Initial Catalog=Proyecto;Integrated Security=True")
+        command.CommandText = "SELECT * FROM [Users] WHERE (username='" + TbxUsername.Text + "')AND (pasword='" + TbxPassword.Text + "');"
+
+        connection.Open()
+        command.Connection = connection
+        adaptor.SelectCommand = command
+
+        adaptor.Fill(dataSet, "0")
+        Dim count = dataSet.Tables(0).Rows.Count
+
+        If count > 0 Then
             Administrator.Show()
         Else
-            MessageBox.Show("Acceso invalido")
+            MsgBox("Error")
         End If
+
     End Sub
 End Class

@@ -149,6 +149,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ProyectoDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ProyectoDataSet.vb">
+      <DependentUpon>ProyectoDataSet.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Administrator.resx">
