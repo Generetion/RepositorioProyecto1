@@ -1,8 +1,6 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class Login
-    Dim username As String = "Admin"
-    Dim password As String = "Admin"
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
@@ -18,7 +16,7 @@ Public Class Login
         Dim dataSet As New DataSet
 
         connection.ConnectionString = ("Data Source=FERNANDO-PC\SQQLEXPRESS;Initial Catalog=Proyecto;Integrated Security=True")
-        command.CommandText = "SELECT * FROM [Users] WHERE (username='" + TbxUsername.Text + "')AND (pasword='" + TbxPassword.Text + "');"
+        command.CommandText = "SELECT * FROM [Users] WHERE (Username='" + TbxUsername.Text + "')AND (Password='" + TbxPassword.Text + "');"
 
         connection.Open()
         command.Connection = connection
@@ -30,7 +28,7 @@ Public Class Login
         If count > 0 Then
             Administrator.Show()
         Else
-            MsgBox("Error")
+            MsgBox("Error usted no esta logeado en la base de datos")
         End If
 
     End Sub
