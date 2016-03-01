@@ -23,6 +23,8 @@ Partial Class Notifications
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.TbxEmail = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Button1
@@ -34,17 +36,38 @@ Partial Class Notifications
         Me.Button1.Text = "Enviar correo"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(16, 73)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(32, 13)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "Email"
+        '
+        'TbxEmail
+        '
+        Me.TbxEmail.Location = New System.Drawing.Point(117, 70)
+        Me.TbxEmail.Name = "TbxEmail"
+        Me.TbxEmail.Size = New System.Drawing.Size(100, 20)
+        Me.TbxEmail.TabIndex = 2
+        '
         'Notifications
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.Controls.Add(Me.TbxEmail)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
         Me.Name = "Notifications"
         Me.Text = "Notificaciones"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Button1 As Button
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents TbxEmail As System.Windows.Forms.TextBox
 End Class

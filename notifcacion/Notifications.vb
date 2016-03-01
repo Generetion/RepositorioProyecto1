@@ -2,13 +2,14 @@
 Public Class Notifications
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
+        Dim emailVariable As String
+        emailVariable = TbxEmail.Text
         Dim EmailMessage As New MailMessage()
         Try
-            EmailMessage.From = New MailAddress("kevinvarmen020595@gmail.com")
-            EmailMessage.To.Add("kevinvarmen020595@gmail.com")
-            EmailMessage.Subject = "Notificacion de multa"
-            EmailMessage.Body = ("No cumplio con los requisitos de reservacion se le debe multar")
+            EmailMessage.From = New MailAddress(emailVariable)
+            EmailMessage.To.Add(emailVariable)
+            EmailMessage.Subject = "Notificacion del sistema"
+            EmailMessage.Body = ("Esta es una alerta del sistema")
             Dim SMTP As New SmtpClient("smtp.gmail.com")
             SMTP.Port = 587
             SMTP.EnableSsl = True
