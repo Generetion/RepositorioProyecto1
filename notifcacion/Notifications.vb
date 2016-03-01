@@ -1,5 +1,5 @@
 ﻿Imports System.Net.Mail
-Public Class Correo
+Public Class Notifications
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
@@ -17,6 +17,10 @@ Public Class Correo
         Catch ex As Exception
 
         End Try
+
+    End Sub
+
+    Private Sub Notifications_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 End Class

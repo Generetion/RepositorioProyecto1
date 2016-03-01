@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Correo
+Partial Class Notifications
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -34,14 +34,14 @@ Partial Class Correo
         Me.Button1.Text = "Enviar correo"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Correo
+        'Notifications
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
         Me.Controls.Add(Me.Button1)
-        Me.Name = "Correo"
-        Me.Text = "Correo"
+        Me.Name = "Notifications"
+        Me.Text = "Notificaciones"
         Me.ResumeLayout(False)
 
     End Sub

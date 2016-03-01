@@ -22,58 +22,58 @@ Partial Class Login
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.BtnLogin = New System.Windows.Forms.Button()
+        Me.BtnExit = New System.Windows.Forms.Button()
+        Me.TbxUsername = New System.Windows.Forms.TextBox()
+        Me.TbxPassword = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'Button1
+        'BtnLogin
         '
-        Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Button1.Font = New System.Drawing.Font("Modern No. 20", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(63, 173)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Login"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.BtnLogin.BackColor = System.Drawing.Color.Transparent
+        Me.BtnLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnLogin.Location = New System.Drawing.Point(63, 173)
+        Me.BtnLogin.Name = "BtnLogin"
+        Me.BtnLogin.Size = New System.Drawing.Size(75, 23)
+        Me.BtnLogin.TabIndex = 0
+        Me.BtnLogin.Text = "Login"
+        Me.BtnLogin.UseVisualStyleBackColor = False
         '
-        'Button2
+        'BtnExit
         '
-        Me.Button2.Font = New System.Drawing.Font("Modern No. 20", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(157, 173)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Exit"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.BtnExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnExit.Location = New System.Drawing.Point(157, 173)
+        Me.BtnExit.Name = "BtnExit"
+        Me.BtnExit.Size = New System.Drawing.Size(75, 23)
+        Me.BtnExit.TabIndex = 1
+        Me.BtnExit.Text = "Exit"
+        Me.BtnExit.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'TbxUsername
         '
-        Me.TextBox1.Location = New System.Drawing.Point(157, 46)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 2
+        Me.TbxUsername.Location = New System.Drawing.Point(157, 46)
+        Me.TbxUsername.Name = "TbxUsername"
+        Me.TbxUsername.Size = New System.Drawing.Size(100, 20)
+        Me.TbxUsername.TabIndex = 2
         '
-        'TextBox2
+        'TbxPassword
         '
-        Me.TextBox2.Location = New System.Drawing.Point(157, 96)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 3
+        Me.TbxPassword.Location = New System.Drawing.Point(157, 96)
+        Me.TbxPassword.Name = "TbxPassword"
+        Me.TbxPassword.Size = New System.Drawing.Size(100, 20)
+        Me.TbxPassword.TabIndex = 3
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label1.Location = New System.Drawing.Point(27, 48)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(84, 18)
+        Me.Label1.Size = New System.Drawing.Size(96, 20)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Username:"
         '
@@ -81,10 +81,10 @@ Partial Class Login
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(27, 99)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(81, 18)
+        Me.Label2.Size = New System.Drawing.Size(91, 20)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Password:"
         '
@@ -96,10 +96,10 @@ Partial Class Login
         Me.ClientSize = New System.Drawing.Size(304, 256)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.TbxPassword)
+        Me.Controls.Add(Me.TbxUsername)
+        Me.Controls.Add(Me.BtnExit)
+        Me.Controls.Add(Me.BtnLogin)
         Me.Name = "Login"
         Me.Text = "Login"
         Me.ResumeLayout(False)
@@ -107,10 +107,10 @@ Partial Class Login
 
     End Sub
 
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents BtnLogin As Button
+    Friend WithEvents BtnExit As Button
+    Friend WithEvents TbxUsername As TextBox
+    Friend WithEvents TbxPassword As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
 End Class
