@@ -1,35 +1,81 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class Login
+    Dim connectionString As String = "Data Source=FERNANDO-PC\SQQLEXPRESS;Initial Catalog=Project;Integrated Security=True"
+
+
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 
     Private Sub BtnLogin_Click(sender As Object, e As EventArgs) Handles BtnLogin.Click
         Login()
+        ' If TbxPassword.Text.Equals("") Then
+        'MsgBox("El campo de nombre de Username no puede quedar vacio", vbCritical)
+        ' End If
+        ' If TbxPassword.Text.Equals("") Then
+        'MsgBox("El campo de Password no puede quedar vacio", vbCritical)
+        'End If
     End Sub
 
     Sub Login()
-        Dim connection As New SqlClient.SqlConnection
-        Dim command As New SqlClient.SqlCommand
-        Dim adaptor As New SqlClient.SqlDataAdapter
+        Dim connection As New SqlConnection(connectionString)
         Dim dataSet As New DataSet
 
-        connection.ConnectionString = ("Data Source=FERNANDO-PC\SQQLEXPRESS;Initial Catalog=Proyecto;Integrated Security=True")
-        command.CommandText = "SELECT * FROM [Users] WHERE (Username='" + TbxUsername.Text + "')AND (Password='" + TbxPassword.Text + "');"
-
+        Dim command As SqlCommand = New SqlCommand("SELECT U.Name, R.Type FROM ApplicationUser U, ApplicationRole R, User_Role UR WHERE U.Id=UR.Id_User AND R.Id=UR.Id_Role  AND U.Username='" & TbxUsername.Text & "' AND U.Password='" & TbxPassword.Text & "'", connection)
         connection.Open()
-        command.Connection = connection
-        adaptor.SelectCommand = command
 
-        adaptor.Fill(dataSet, "0")
-        Dim count = dataSet.Tables(0).Rows.Count
+        Dim reader As SqlDataReader = command.ExecuteReader()
 
-        If count > 0 Then
-            Administrator.Show()
+        'Si la consulta genera datos desde SQL
+        If reader.HasRows Then
+
+            reader.Read() 'lee el resultado de la consulta
+            Dim roleName As String
+            roleName = reader.GetString(1)
+
+            If roleName.Equals("Admin") Then
+
+                MsgBox(roleName)
+
+                Dim adminForm As Information
+                adminForm = New Information()
+                adminForm.Show()
+                Me.Close()
+
+
+            End If
         Else
-            MsgBox("Error usted no esta logeado en la base de datos")
+
+            MsgBox("Error en los datos") 'especifique bien esto
+
         End If
+
+    End Sub
+
+    Private Sub TbxUsername_TextChanged(sender As Object, e As EventArgs) Handles TbxUsername.TextChanged
+
+
+
+    End Sub
+
+    '  Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+    'Dim registrerFrom As Registro
+    '    registrerFrom = New Registro()
+    '   registrerFrom.Show()
+    '    Me.Close()
+    '   End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim registrerForm As Registrer
+        registrerForm = New Registrer()
+        registrerForm.Show()
+        Me.Close()
+
+    End Sub
+
+    Private Sub BackgroundWorker1_DoWork(sender As Object, e As System.ComponentModel.DoWorkEventArgs)
 
     End Sub
 End Class

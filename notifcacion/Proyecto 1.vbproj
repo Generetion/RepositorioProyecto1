@@ -13,6 +13,7 @@
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -25,7 +26,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -87,10 +87,17 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Administrator.Designer.vb">
-      <DependentUpon>Administrator.vb</DependentUpon>
+    <Compile Include="AdminForm.Designer.vb">
+      <DependentUpon>AdminForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrator.vb">
+    <Compile Include="AdminForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationUser.vb" />
+    <Compile Include="Create.Designer.vb">
+      <DependentUpon>Create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Create.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Information.Designer.vb">
@@ -103,12 +110,6 @@
       <DependentUpon>Notifications.vb</DependentUpon>
     </Compile>
     <Compile Include="Notifications.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Home.Designer.vb">
-      <DependentUpon>Home.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Home.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.vb">
@@ -144,6 +145,12 @@
     <Compile Include="Products.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ProfessorForm.Designer.vb">
+      <DependentUpon>ProfessorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProfessorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ProyectoDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -152,19 +159,28 @@
     <Compile Include="ProyectoDataSet.vb">
       <DependentUpon>ProyectoDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Registrer.Designer.vb">
+      <DependentUpon>Registrer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registrer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentForm.Designer.vb">
+      <DependentUpon>StudentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Administrator.resx">
-      <DependentUpon>Administrator.vb</DependentUpon>
+    <EmbeddedResource Include="AdminForm.resx">
+      <DependentUpon>AdminForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Information.resx">
       <DependentUpon>Information.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Notifications.resx">
       <DependentUpon>Notifications.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Home.resx">
-      <DependentUpon>Home.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
@@ -180,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Products.resx">
       <DependentUpon>Products.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registrer.resx">
+      <DependentUpon>Registrer.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

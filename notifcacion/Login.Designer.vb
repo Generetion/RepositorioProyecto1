@@ -28,6 +28,7 @@ Partial Class Login
         Me.TbxPassword = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'BtnLogin
@@ -62,6 +63,7 @@ Partial Class Login
         '
         Me.TbxPassword.Location = New System.Drawing.Point(157, 96)
         Me.TbxPassword.Name = "TbxPassword"
+        Me.TbxPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TbxPassword.Size = New System.Drawing.Size(100, 20)
         Me.TbxPassword.TabIndex = 3
         '
@@ -88,12 +90,22 @@ Partial Class Login
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Password:"
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(105, 221)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 6
+        Me.Button1.Text = "Registro"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Proyecto.My.Resources.Resources.smooth_ice
         Me.ClientSize = New System.Drawing.Size(304, 256)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TbxPassword)
@@ -113,4 +125,5 @@ Partial Class Login
     Friend WithEvents TbxPassword As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class
