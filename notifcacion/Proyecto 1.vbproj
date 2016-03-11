@@ -94,12 +94,13 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ApplicationUser.vb" />
-    <Compile Include="Create.Designer.vb">
-      <DependentUpon>Create.vb</DependentUpon>
+    <Compile Include="ArticlesCRUD.Designer.vb">
+      <DependentUpon>ArticlesCRUD.vb</DependentUpon>
     </Compile>
-    <Compile Include="Create.vb">
+    <Compile Include="ArticlesCRUD.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Article.vb" />
     <Compile Include="Information.Designer.vb">
       <DependentUpon>Information.vb</DependentUpon>
     </Compile>
@@ -165,6 +166,7 @@
     <Compile Include="Registrer.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Room.vb" />
     <Compile Include="StudentForm.Designer.vb">
       <DependentUpon>StudentForm.vb</DependentUpon>
     </Compile>
@@ -175,6 +177,9 @@
   <ItemGroup>
     <EmbeddedResource Include="AdminForm.resx">
       <DependentUpon>AdminForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArticlesCRUD.resx">
+      <DependentUpon>ArticlesCRUD.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Information.resx">
       <DependentUpon>Information.vb</DependentUpon>

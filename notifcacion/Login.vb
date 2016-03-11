@@ -36,13 +36,10 @@ Public Class Login
 
             If roleName.Equals("Admin") Then
 
-                MsgBox(roleName)
-
-                Dim adminForm As Information
-                adminForm = New Information()
+                Dim adminForm As AdminForm
+                adminForm = New AdminForm()
                 adminForm.Show()
                 Me.Close()
-
 
             End If
         Else

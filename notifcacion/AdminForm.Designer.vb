@@ -25,62 +25,36 @@ Partial Class AdminForm
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.TsmAccount = New System.Windows.Forms.ToolStripMenuItem()
         Me.UsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GestionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MantenimientoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.InventarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ArticulosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TsmNotifications = New System.Windows.Forms.ToolStripMenuItem()
         Me.TsmPenalty = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ArticulosToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SolicitudesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FormularioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TsmAccount, Me.MantenimientoToolStripMenuItem, Me.ReportesToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TsmAccount, Me.SolicitudesToolStripMenuItem, Me.ReportesToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(511, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(632, 24)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'TsmAccount
         '
-        Me.TsmAccount.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsuariosToolStripMenuItem, Me.GestionesToolStripMenuItem})
+        Me.TsmAccount.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsuariosToolStripMenuItem, Me.ArticulosToolStripMenuItem1})
         Me.TsmAccount.Name = "TsmAccount"
-        Me.TsmAccount.Size = New System.Drawing.Size(62, 20)
-        Me.TsmAccount.Text = "Cuentas"
+        Me.TsmAccount.Size = New System.Drawing.Size(81, 20)
+        Me.TsmAccount.Text = "Administrar"
         '
         'UsuariosToolStripMenuItem
         '
         Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
-        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
+        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.UsuariosToolStripMenuItem.Text = "Usuarios"
-        '
-        'GestionesToolStripMenuItem
-        '
-        Me.GestionesToolStripMenuItem.Name = "GestionesToolStripMenuItem"
-        Me.GestionesToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
-        Me.GestionesToolStripMenuItem.Text = "Gestiones"
-        '
-        'MantenimientoToolStripMenuItem
-        '
-        Me.MantenimientoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InventarioToolStripMenuItem, Me.ArticulosToolStripMenuItem})
-        Me.MantenimientoToolStripMenuItem.Name = "MantenimientoToolStripMenuItem"
-        Me.MantenimientoToolStripMenuItem.Size = New System.Drawing.Size(101, 20)
-        Me.MantenimientoToolStripMenuItem.Text = "Mantenimiento"
-        '
-        'InventarioToolStripMenuItem
-        '
-        Me.InventarioToolStripMenuItem.Name = "InventarioToolStripMenuItem"
-        Me.InventarioToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
-        Me.InventarioToolStripMenuItem.Text = "Inventario"
-        '
-        'ArticulosToolStripMenuItem
-        '
-        Me.ArticulosToolStripMenuItem.Name = "ArticulosToolStripMenuItem"
-        Me.ArticulosToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
-        Me.ArticulosToolStripMenuItem.Text = "Articulos"
         '
         'ReportesToolStripMenuItem
         '
@@ -101,13 +75,32 @@ Partial Class AdminForm
         Me.TsmPenalty.Size = New System.Drawing.Size(142, 22)
         Me.TsmPenalty.Text = "Multas"
         '
-        'AdminFrom
+        'ArticulosToolStripMenuItem1
+        '
+        Me.ArticulosToolStripMenuItem1.Name = "ArticulosToolStripMenuItem1"
+        Me.ArticulosToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ArticulosToolStripMenuItem1.Text = "Articulos"
+        '
+        'SolicitudesToolStripMenuItem
+        '
+        Me.SolicitudesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FormularioToolStripMenuItem})
+        Me.SolicitudesToolStripMenuItem.Name = "SolicitudesToolStripMenuItem"
+        Me.SolicitudesToolStripMenuItem.Size = New System.Drawing.Size(76, 20)
+        Me.SolicitudesToolStripMenuItem.Text = "Solicitudes"
+        '
+        'FormularioToolStripMenuItem
+        '
+        Me.FormularioToolStripMenuItem.Name = "FormularioToolStripMenuItem"
+        Me.FormularioToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
+        Me.FormularioToolStripMenuItem.Text = "Formulario General"
+        '
+        'AdminForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(511, 342)
+        Me.ClientSize = New System.Drawing.Size(632, 453)
         Me.Controls.Add(Me.MenuStrip1)
-        Me.Name = "AdminFrom"
+        Me.Name = "AdminForm"
         Me.Text = "AdminFrom"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
@@ -118,11 +111,10 @@ Partial Class AdminForm
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents TsmAccount As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents UsuariosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GestionesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents MantenimientoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents InventarioToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ArticulosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ReportesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents TsmNotifications As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents TsmPenalty As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ArticulosToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents SolicitudesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents FormularioToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class
