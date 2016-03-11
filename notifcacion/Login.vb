@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class Login
-    Dim connectionString As String = "Data Source=FERNANDO-PC\SQQLEXPRESS;Initial Catalog=Project;Integrated Security=True"
+    Dim connectionString As String = "Data Source=FERNANDO-PC\SQQLEXPRESS;Initial Catalog=Proyecto;Integrated Security=True"
 
 
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load

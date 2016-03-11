@@ -35,14 +35,12 @@ Partial Class Registrer
         Me.BtnRegistrer = New System.Windows.Forms.Button()
         Me.TbxContraseña = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.TbxId = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(48, 133)
+        Me.Label6.Location = New System.Drawing.Point(48, 103)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(98, 13)
         Me.Label6.TabIndex = 28
@@ -50,7 +48,7 @@ Partial Class Registrer
         '
         'TbxUsername
         '
-        Me.TbxUsername.Location = New System.Drawing.Point(163, 133)
+        Me.TbxUsername.Location = New System.Drawing.Point(163, 103)
         Me.TbxUsername.Name = "TbxUsername"
         Me.TbxUsername.Size = New System.Drawing.Size(100, 20)
         Me.TbxUsername.TabIndex = 27
@@ -58,7 +56,7 @@ Partial Class Registrer
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(48, 242)
+        Me.Label5.Location = New System.Drawing.Point(48, 212)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(49, 13)
         Me.Label5.TabIndex = 25
@@ -67,7 +65,7 @@ Partial Class Registrer
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(48, 196)
+        Me.Label3.Location = New System.Drawing.Point(48, 166)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(35, 13)
         Me.Label3.TabIndex = 23
@@ -76,7 +74,7 @@ Partial Class Registrer
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(48, 96)
+        Me.Label2.Location = New System.Drawing.Point(48, 66)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(49, 13)
         Me.Label2.TabIndex = 22
@@ -93,21 +91,21 @@ Partial Class Registrer
         '
         'TbxPhone
         '
-        Me.TbxPhone.Location = New System.Drawing.Point(163, 239)
+        Me.TbxPhone.Location = New System.Drawing.Point(163, 209)
         Me.TbxPhone.Name = "TbxPhone"
         Me.TbxPhone.Size = New System.Drawing.Size(100, 20)
         Me.TbxPhone.TabIndex = 20
         '
         'TbxEmail
         '
-        Me.TbxEmail.Location = New System.Drawing.Point(163, 189)
+        Me.TbxEmail.Location = New System.Drawing.Point(163, 159)
         Me.TbxEmail.Name = "TbxEmail"
         Me.TbxEmail.Size = New System.Drawing.Size(100, 20)
         Me.TbxEmail.TabIndex = 19
         '
         'TbxLastName
         '
-        Me.TbxLastName.Location = New System.Drawing.Point(163, 89)
+        Me.TbxLastName.Location = New System.Drawing.Point(163, 59)
         Me.TbxLastName.Name = "TbxLastName"
         Me.TbxLastName.Size = New System.Drawing.Size(100, 20)
         Me.TbxLastName.TabIndex = 18
@@ -130,7 +128,7 @@ Partial Class Registrer
         '
         'TbxContraseña
         '
-        Me.TbxContraseña.Location = New System.Drawing.Point(163, 293)
+        Me.TbxContraseña.Location = New System.Drawing.Point(163, 263)
         Me.TbxContraseña.Name = "TbxContraseña"
         Me.TbxContraseña.Size = New System.Drawing.Size(100, 20)
         Me.TbxContraseña.TabIndex = 30
@@ -138,35 +136,17 @@ Partial Class Registrer
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(48, 293)
+        Me.Label7.Location = New System.Drawing.Point(48, 263)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(61, 13)
         Me.Label7.TabIndex = 31
         Me.Label7.Text = "Contraseña"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(48, 52)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(16, 13)
-        Me.Label4.TabIndex = 32
-        Me.Label4.Text = "Id"
-        '
-        'TbxId
-        '
-        Me.TbxId.Location = New System.Drawing.Point(163, 49)
-        Me.TbxId.Name = "TbxId"
-        Me.TbxId.Size = New System.Drawing.Size(100, 20)
-        Me.TbxId.TabIndex = 33
         '
         'Registrer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(505, 496)
-        Me.Controls.Add(Me.TbxId)
-        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.TbxContraseña)
         Me.Controls.Add(Me.BtnRegistrer)
@@ -199,6 +179,4 @@ Partial Class Registrer
     Friend WithEvents BtnRegistrer As System.Windows.Forms.Button
     Friend WithEvents TbxContraseña As System.Windows.Forms.TextBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents TbxId As System.Windows.Forms.TextBox
 End Class
